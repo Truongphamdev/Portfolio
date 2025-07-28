@@ -74,7 +74,7 @@ export const About = () => {
 };
 
 const Card = ({ img, title, content }) => (
-  <div className="bg-[#B7A261] dark:bg-[#625839] rounded-xl shadow hover:scale-[1.02] transition-all grid grid-cols-3 gap-2 ">
+  <div className="bg-[#FDF4F4] dark:bg-[#625839] rounded-xl shadow hover:scale-[1.02] transition-all grid grid-cols-3 gap-2 ">
     <div className="col-span-1 flex justify-center">
       <img src={img} alt={title} className="w-48 h-full object-cover rounded-lg " />
     </div>

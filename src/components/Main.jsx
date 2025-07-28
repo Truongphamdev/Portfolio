@@ -91,7 +91,7 @@ export default function ProfileCard() {
   transition={{ type: "spring", stiffness: 300, damping: 30 }}
   className="dark:bg-[#C2B293] dark:text-[#3B3729] mt-4 w-full bg-yellow-300 text-black rounded-full py-2 font-semibold cursor-pointer"
 >
-  <a href="/my_cv.pdf" download="cv-truongnguyen.pdf">Download CV</a>
+  <a href="/cv_cua_toi.pdf" download="cv-truongnguyen.pdf">Download CV</a>
 </motion.button>
 
         </div>

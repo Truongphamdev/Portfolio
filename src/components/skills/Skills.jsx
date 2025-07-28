@@ -57,7 +57,7 @@ export default function SkillsTools() {
         transition={{
           duration: 0.5,
           ease: [0.25, 0.7, 0.25, 1],
-        }} className="bg-white dark:bg-black text-black dark:text-white md:pt-0 pt-6">
+        }} className="bg-white dark:bg-black text-black dark:text-white mt-6">
                     {/* Toggle button */}
         <button
           onClick={toggleDarkMode}
