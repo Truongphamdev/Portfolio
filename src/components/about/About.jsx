@@ -16,15 +16,15 @@ export const About = () => {
     duration: 0.5,
     ease: [0.25, 0.7, 0.25, 1]
   }}
-      id="about"
-      className="min-h-screen dark:bg-black bg-white text-black dark:text-white pt-6"
     >
-      <button
-        onClick={toggleDarkMode}
-        className="absolute top-4 right-4 bg-gray-200 cursor-pointer dark:bg-gray-700 p-2 rounded-full hover:scale-105 transition"
-      >
-        {darkMode ? "🌞" : "🌙"}
-      </button>
+        <button
+          onClick={toggleDarkMode}
+          className="fixed top-4 right-4 bg-gray-200 dark:bg-gray-700 p-2 rounded-full hover:scale-105 transition"
+        >
+          {darkMode ? "🌞" : "🌙"}
+        </button>
+      <div id="about"
+      className="min-h-screen dark:bg-black bg-white text-black dark:text-white pt-6">
 
      
 
@@ -67,6 +67,8 @@ export const About = () => {
             content="I can independently develop full-stack applications, handling everything from front-end design to API and database integration."
           />
         </div>
+      </div>
+      
       </div>
     </motion.div>
         </>

@@ -17,6 +17,7 @@ export default function ProfileCard() {
     document.title = "Trang Chủ | Trường Nguyễn";
   }, []);
   return (
+
     <motion.div 
       initial={{ y: 20 }}
   animate={{ y: 0 }}
@@ -24,14 +25,16 @@ export default function ProfileCard() {
   transition={{
     duration: 1,
     ease: [0.25, 0.7, 0.25, 1]
-  }}
-    className="min-h-screen dark:bg-black flex items-center justify-center bg-white p-4">
-                <button
-          onClick={toggleDarkMode}
-          className="absolute top-4 right-4 bg-gray-200 cursor-pointer dark:bg-gray-700 p-2 rounded-full hover:scale-105 transition"
-        >
-          {darkMode ? '🌞' : '🌙'}
-        </button>
+  }}>
+    <button
+      onClick={toggleDarkMode}
+      className="fixed top-4 right-4 bg-gray-200 dark:bg-gray-700 p-2 rounded-full hover:scale-105 transition"
+    >
+      {darkMode ? "🌞" : "🌙"}
+    </button>
+  <div className="min-h-screen dark:bg-black flex items-center justify-center bg-white p-4">
+    
+                
       <div className="dark:border-[#4B3D10] w-full max-w-xs md:max-w-md rounded-2xl shadow-2xl border border-yellow-200">
         <div className="relative flex flex-col items-center p-4 pt-20">
           <motion.img
@@ -109,6 +112,7 @@ export default function ProfileCard() {
           buttonNext: () => null, 
         }}
 />
+  </div>
       </div>
     </motion.div>
   );
